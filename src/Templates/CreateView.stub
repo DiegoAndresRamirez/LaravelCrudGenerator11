@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <h1>Create {{ model }}</h1>
+        <!-- Aquí va el formulario para crear un nuevo {{ model }} -->
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            // Aquí va la data necesaria para crear el {{ model }}
+        }
+    }
+}
+</script>

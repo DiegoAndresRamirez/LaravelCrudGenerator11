@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <h1>{{ model }} Index</h1>
+        <!-- Aquí va la lógica para mostrar los elementos del modelo -->
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        {{ model }}s: Array, // Recibimos la lista de {{ model }}s
+    },
+}
+</script>

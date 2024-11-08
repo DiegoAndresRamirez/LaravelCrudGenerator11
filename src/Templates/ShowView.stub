@@ -1,0 +1,26 @@
+<template>
+    <div>
+        <h1>{{ model }} Show</h1>
+        <!-- Mostrar los detalles de un único modelo -->
+        <div v-if="model && model.id">
+            <p><strong>ID:</strong> {{ model.id }}</p>
+            <p><strong>Name:</strong> {{ model.name }}</p>
+            <!-- Agregar más campos según las propiedades del modelo -->
+        </div>
+        <div v-else>
+            <p>No {{ model }} found.</p>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        model: Object, // Recibimos el objeto del modelo (ej. 'User')
+    },
+}
+</script>
+
+<style scoped>
+/* Aquí puedes agregar los estilos para la vista Show */
+</style>
